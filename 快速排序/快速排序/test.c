@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
-#include<stdlib.h>//´ÓĞ¡µ½´óÅÅĞò
+#include<stdlib.h>//ä»å°åˆ°å¤§æ’åº
 
 void swap(int* x1, int* x2)
 {
@@ -9,19 +9,19 @@ void swap(int* x1, int* x2)
 	*x2 = temp;
 }
 
-int QuickSortPart1(int* arr, int left,int right)//×óÓÒÖ¸Õë·¨
+int QuickSortPart1(int* arr, int left,int right)//å·¦å³æŒ‡é’ˆæ³•
 {
 	int key = arr[right];
 	int keyindex = right;
 	while (left < right)
 	{
 		while (left < right && arr[left] <= key)
-		//×óÖ¸ÕëÕÒ±ÈKey´óµÄÊı
+		//å·¦æŒ‡é’ˆæ‰¾æ¯”Keyå¤§çš„æ•°
 		{
 			++left;
 		}
 		while (left < right && arr[right] >= key)
-		//ÓÒÖ¸ÕëÕÒ±ÈKeyĞ¡µÄÊı
+		//å³æŒ‡é’ˆæ‰¾æ¯”Keyå°çš„æ•°
 		{
 			--right;
 		}
@@ -36,11 +36,31 @@ int QuickSortPart1(int* arr, int left,int right)//×óÓÒÖ¸Õë·¨
 	return left;
 }
 
+int QuickSortPart2(int* arr, int left, int right)//æŒ–å‘æ³•
+{
+	int key = arr[right];
+	while (left < right)
+	{
+		while (left < right && arr[left] <= key)//å·¦è¾¹æ‰¾å¤§ï¼Œæ”¾åˆ°å³è¾¹çš„å‘ã€‚
+		{
+			++left;
+		}
+		arr[right] = arr[left];
+		while (left < right && arr[right] >= key)//å³è¾¹æ‰¾å°ï¼Œæ”¾åˆ°å·¦è¾¹çš„å‘ã€‚
+		{
+			--right;
+		}
+		arr[left] = arr[right];
+	}
+	arr[right] = key;
+	return left;
+}
 void QuickSort(int* arr, int left, int right)
 {
 	if (left >= right)
 		return;
-	int keyindex = QuickSortPart1(arr, left, right);
+	//int keyindex = QuickSortPart1(arr, left, right);
+	int keyindex = QuickSortPart2(arr, left, right);
 	//[left,keyindex-1] key [keyindex+1,right]
 	QuickSort(arr, left, keyindex - 1);
 	QuickSort(arr, keyindex + 1, right);
