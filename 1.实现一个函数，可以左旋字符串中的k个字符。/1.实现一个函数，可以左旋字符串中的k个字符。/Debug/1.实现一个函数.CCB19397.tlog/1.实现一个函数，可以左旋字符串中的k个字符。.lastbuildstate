@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+Debug|Win32|D:\比特科技\比特作业\Day-14\1.实现一个函数，可以左旋字符串中的k个字符。\|

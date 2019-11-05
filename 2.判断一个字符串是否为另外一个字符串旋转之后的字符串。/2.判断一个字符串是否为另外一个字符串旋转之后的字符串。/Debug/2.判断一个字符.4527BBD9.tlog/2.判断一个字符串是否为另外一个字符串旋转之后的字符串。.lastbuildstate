@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit
+Debug|Win32|D:\比特科技\比特作业\Day-14\2.判断一个字符串是否为另外一个字符串旋转之后的字符串。\|
