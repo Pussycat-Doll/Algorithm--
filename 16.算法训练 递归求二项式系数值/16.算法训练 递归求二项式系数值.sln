@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "16.算法训练 递归求二项式系数值", "16.算法训练 递归求二项式系数值\16.算法训练 递归求二项式系数值.vcxproj", "{15DCD232-B670-4873-B96B-DD5F59E4EB6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15DCD232-B670-4873-B96B-DD5F59E4EB6E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15DCD232-B670-4873-B96B-DD5F59E4EB6E}.Debug|Win32.Build.0 = Debug|Win32
+		{15DCD232-B670-4873-B96B-DD5F59E4EB6E}.Release|Win32.ActiveCfg = Release|Win32
+		{15DCD232-B670-4873-B96B-DD5F59E4EB6E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -20,7 +20,7 @@
 #include<string>
 #include<stdlib.h>
 using namespace std;
-int atoi(string& str)
+int atoi(string& str)//字符串转换为整型
 {
 	int flag = 1;
 	int num = 0;
@@ -38,7 +38,7 @@ int atoi(string& str)
 	}
 	return flag*num;
 }
-int evalRPN(vector<string>& tokens)
+int evalRPN(vector<string>& tokens)//后缀表达式计算出结果
 {
 	stack<int> num;
 	vector<string>::iterator it = tokens.begin();
@@ -79,6 +79,24 @@ int evalRPN(vector<string>& tokens)
 		++it;
 	}
 	return num.top();
+}
+void func(vector<string> s)
+{
+	vector<string> vc;
+	stack<char> st;
+	for (int i = 0; i < s.size(); ++i)
+	{
+		if (s[i] != "+" || s[i] != "-" || s[i] != "*" || s[i] != "/" || s[i] != ")")
+		{
+			vc.push_back(s[i]);
+		}
+		else
+		{
+			if (st.empty())
+				st.push(s[i][0]);
+			else if ( )
+		}
+	}
 }
 
 int main()
