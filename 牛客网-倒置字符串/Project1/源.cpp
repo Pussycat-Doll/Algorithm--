@@ -13,30 +13,46 @@ void copy(int start, int end, string src, string& dest)
 		++start;
 	}
 }
-int main()
+void test()
 {
 	string str;
-	getline(cin,str);
-	string dest;
-	int end = str.size() - 1;
-	int start = 0;
-	int flag = 0;
-	for (int i = str.size() - 1; i >= 0; i--)
+	string st;
+	while (cin >> str)//cin遇到空格和换行符就会发生结束接受
 	{
-		if (str[i] == ' ')
-		{
-			flag = i;
-			start = flag + 1;
-			copy(start, end, str, dest);
-			dest.push_back(' ');
-			end = flag - 1;
-		}
-		else if (i == 0)
-		{
-			copy(0, flag - 1, str, dest);
-		}
+		st = str + " " + st;
 	}
-	cout << dest << endl;
+	cout <<st<< endl;
+}
+//int main()
+//{
+//	string str;
+//	getline(cin,str);
+//	string dest;
+//	int end = str.size() - 1;
+//	int start = 0;
+//	int flag = 0;
+//	for (int i = str.size() - 1; i >= 0; i--)
+//	{
+//		if (str[i] == ' ')
+//		{
+//			flag = i;
+//			start = flag + 1;
+//			copy(start, end, str, dest);
+//			dest.push_back(' ');
+//			end = flag - 1;
+//		}
+//		else if (i == 0)
+//		{
+//			copy(0, flag - 1, str, dest);
+//		}
+//	}
+//	cout << dest << endl;
+//	system("pause");
+//	return 0;
+//}
+int main()
+{
+	test();
 	system("pause");
 	return 0;
 }
