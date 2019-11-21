@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-	int num = 13;
+	int num = 3;
 	//cin >> num;
 	int count = 0;
 	int max = 0;
