@@ -65,9 +65,8 @@ int get_max(vector<int> l)
 	int max = l[0];
 	for (size_t i = 0; i < l.size(); ++i)
 	{
-		sum = Max(sum + l[i], l[i]);//动态规划
-		if (sum > max)
-			max = sum;
+		sum = Max(sum + l[i], l[i]);//动态规划状态方程 
+		max = Max(sum, max);
 	}
 	return max;
 }
