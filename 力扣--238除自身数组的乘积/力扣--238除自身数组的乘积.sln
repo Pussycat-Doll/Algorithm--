@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "力扣--238除自身数组的乘积", "力扣--238除自身数组的乘积.vcxproj", "{0D978BE7-BB95-4786-87C8-B90E199FD985}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Debug|x64.ActiveCfg = Debug|x64
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Debug|x64.Build.0 = Debug|x64
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Debug|x86.ActiveCfg = Debug|Win32
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Debug|x86.Build.0 = Debug|Win32
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Release|x64.ActiveCfg = Release|x64
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Release|x64.Build.0 = Release|x64
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Release|x86.ActiveCfg = Release|Win32
+		{0D978BE7-BB95-4786-87C8-B90E199FD985}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDA7F96F-9B1D-45A7-8676-6FCF9660D72E}
+	EndGlobalSection
+EndGlobal
