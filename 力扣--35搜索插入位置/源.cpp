@@ -5,19 +5,23 @@ using namespace std;
 
 int searchInsert(vector<int>& nums, int target) 
 {
-    for (int i = 0; i < nums.size(); ++i)
+    if (nums.size() == 0)
+        return 0;
+
+    int left = 0;
+    int right = nums.size() - 1;
+    int mid;
+    if (nums[right] < target)
+        return nums.size();
+    while (left <= right)
     {
-        if (nums[i] == target)
-            return i;
+        mid = (left + right) / 2;
+        if (target <= nums[mid])
+            right = mid;
+        else
+            left = mid + 1;
     }
-    vector<int>::iterator it = nums.begin();
-    while (it != nums.end())
-    {
-        if (*it > target)
-        {
-            nums.insert()
-        }
-    }
+    return left;
 }
 int main()
 {
