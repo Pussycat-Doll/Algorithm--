@@ -1,4 +1,4 @@
-﻿/*给定一个按照升序排列的整数数组 nums，和一个目标值 target。
+﻿ /*给定一个按照升序排列的整数数组 nums，和一个目标值 target。
 找出给定目标值在数组中的开始位置和结束位置。
 
 你的算法时间复杂度必须是 O(log n) 级别。
@@ -20,32 +20,35 @@
 #include<vector>
 using namespace std;
 
-int binsearch(vector<int>& nums, int target)
+vector<int> searchRange(vector<int>& nums, int target) 
 {
-	int left = 0;
-	int right = nums.size() - 1;
-	while (left <= right)
+	int left = 0;//找左边界
+	int right = nums.size();
+	vector<int> res;
+	while (left < right)
 	{
 		int mid = (left + right) / 2;
 		if (nums[mid] < target)
 			left = mid + 1;
-		if (nums[mid] > target)
-			right = mid - 1;
-		else
-			return left;
+		else 
+			right = mid;
 	}
-	return -1;
-}
-vector<int> searchRange(vector<int>& nums, int target) 
-{
-	vector<int> ve;
-	int first = binsearch(nums, target);
-	if (first == -1)
+	if ( left == nums.size() || nums[left] != target)
 		return { -1,-1 };
-	else
+	if (nums[left] == target) 
+		res.push_back(left);
+	right = nums.size();
+	while (left < right)//找友边界
 	{
-		int second = binsearch(nums, target);
+		int mid = (left + right) / 2;
+		if (target >= nums[mid])
+			left = mid + 1;
+		else
+			right = mid;
 	}
+	if (nums[right - 1] == target)
+		res.push_back(right - 1);
+	return res;
 }
 int main()
 {
