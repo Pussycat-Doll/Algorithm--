@@ -23,5 +23,9 @@ int sum(int m, int n)
 }
 int main()
 {
-    
+     int m, n;
+    while (cin >> m >> n)
+    {
+        cout << sum(m, n) << endl;
+    }
 }
