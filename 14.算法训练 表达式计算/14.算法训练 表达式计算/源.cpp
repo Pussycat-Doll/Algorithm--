@@ -80,7 +80,7 @@ int evalRPN(vector<string>& tokens)//后缀表达式计算出结果
 	}
 	return num.top();
 }
-void func(vector<string> s)
+/*void func(vector<string> s)
 {
 	vector<string> vc;
 	stack<char> st;
@@ -97,7 +97,7 @@ void func(vector<string> s)
 			else if ( )
 		}
 	}
-}
+}*/
 
 int main()
 {
