@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "牛客网--客似云来", "牛客网--客似云来\牛客网--客似云来.vcxproj", "{7C204CC3-2D6F-429B-A850-6E998CD6CF01}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Debug|x64.ActiveCfg = Debug|x64
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Debug|x64.Build.0 = Debug|x64
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Debug|x86.ActiveCfg = Debug|Win32
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Debug|x86.Build.0 = Debug|Win32
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Release|x64.ActiveCfg = Release|x64
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Release|x64.Build.0 = Release|x64
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Release|x86.ActiveCfg = Release|Win32
+		{7C204CC3-2D6F-429B-A850-6E998CD6CF01}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A77289E9-1032-4B1F-B40B-BCA372647108}
+	EndGlobalSection
+EndGlobal
