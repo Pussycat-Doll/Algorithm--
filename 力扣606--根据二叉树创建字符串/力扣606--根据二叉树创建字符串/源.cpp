@@ -1,31 +1,37 @@
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
 /*
 class Solution {
 public:
-    void _tree2str(TreeNode* t, string& str)
+    void treestrpart(TreeNode* t, string& str)
     {
         if (t == nullptr)
             return;
-
         str += to_string(t->val);
-        if (t->left || t->right)
+        if (t->left || t->right)//左子树是否为空都要进去
         {
-            str += '(';
-            _tree2str(t->left, str);
-            str += ')';
+            str += "(";
+            treestrpart(t->left, str);
+            str += ")";
         }
-
         if (t->right)
         {
-            str += '(';
-            _tree2str(t->right, str);
-            str += ')';
+            str += "(";
+            treestrpart(t->right, str);
+            str += ")";
         }
     }
-
-    string tree2str(TreeNode* t) {
+    string tree2str(TreeNode* t)
+    {
         string str;
-        _tree2str(t, str);
-
+        treestrpart(t, str);
         return str;
     }
 };*/
