@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{BB99A9E5-C844-44FC-B976-FD840B493C83}</ProjectGuid>
-    <RootNamespace>力扣122买卖股票的最佳时机II</RootNamespace>
+    <ProjectGuid>{DED9EE9C-A7B8-4D14-B04C-AA984DBF05AD}</ProjectGuid>
+    <RootNamespace>力扣53最大子序和</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
