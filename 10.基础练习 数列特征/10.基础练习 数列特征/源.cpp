@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 /*10.基础练习 数列特征  
 问题描述
      给出n个数，找出这n个数的最大值，最小值，和。
