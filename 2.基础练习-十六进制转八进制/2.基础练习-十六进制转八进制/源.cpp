@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS 1
+
 /*问题描述
 　　 给定n个十六进制正整数，输出它们对应的八进制数。
 输入格式
