@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 /*
 在命令行输入如下命令：
 xcopy /s c:\ d:\，
