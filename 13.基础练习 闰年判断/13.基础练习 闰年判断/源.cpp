@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 /*
 		13.基础练习 闰年判断
 		问题描述
@@ -48,4 +47,3 @@ int main()
 	system("pause");
 	return 0;
 }
-
