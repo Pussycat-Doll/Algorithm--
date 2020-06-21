@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 /*16.算法训练 递归求二项式系数值  
 问题描述
  
