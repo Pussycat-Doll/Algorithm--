@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 /*
 题目标题: 高斯日记
     大数学家高斯有个好习惯：无论如何都要记日记。
