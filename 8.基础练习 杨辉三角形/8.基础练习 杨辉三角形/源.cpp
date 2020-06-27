@@ -1,10 +1,8 @@
-#define _CRT_SECURE_NO_WARNINGS 1
 /*8.基础练习 杨辉三角形  
 问题描述
      杨辉三角形又称Pascal三角形，它的第i+1行是(a+b)i的展开式的系数。
      它的一个重要性质是：三角形中的每个数字等于它两肩上的数字相加。
-     下面给出了杨辉三角形的前4行：
-　　
+     下面给出了杨辉三角形的前4行：　　
    1
 　　
   1 1
@@ -29,6 +27,7 @@
 数据规模与约定
 1 <= n <= 34。
 */
+
 #include<iostream>
 #include<stdlib.h>
 using namespace std;
